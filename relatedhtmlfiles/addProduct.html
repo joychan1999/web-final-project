@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <div class="addcontent">
+        <a href="../seller.html">
+            <img class="back" src="https://cdn0.iconfinder.com/data/icons/ie_Bright/128/back_green.png" alt="">
+        </a>
+        <h2 class="h2">Add Product</h2>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Product Category</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">Orchid</option>
+                            <option value="canada">Daisie</option>
+                            <option value="usa">Succulent</option>
+                            <option value="usa">Rose</option>
+                            <option value="usa">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Product Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Product name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname"> Product Price</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Place Price of the Product">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Place an image of the Product</label>
+                    </div>
+                    <div class="col-75">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"><br>
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"><br>
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"><br>
+                                <input type="file" class="custom-file-input" id="inputGroupFile01"><br>
+                                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Add Description of the Product</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write the product's description.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="addButton">Add Product</button>
+                </div>
+                <!-- <div class="row">
+                    <a href="../seller.html"><input type="submit" value="Add Product"></a>
+                    
+                </div> -->
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

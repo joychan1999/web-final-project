@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/buyer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <title>GreenPlanthom</title>
+</head>
+
+<body class="body">
+    <div id="navigationBar">
+        <ul class="nav justify-content-end" id="navs">
+            <li class="nav-item mt-1">
+                <a class="nav-link active" aria-current="page" href="#"><img class="imgicon"
+                        src="https://cdn1.iconfinder.com/data/icons/crime-and-security-3-7/48/106-256.png"
+                        alt="">Notification</a> <!-- use badge para sa notification add-->
+            </li>
+            <li class="nav-item mt-1">
+                <a class="nav-link" href="./help.html"> <img
+                        src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-and-shapes-3/177800/135-256.png"
+                        alt="" class="imgicon"> Help</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="dropbtn"
+                        src="https://cdn4.iconfinder.com/data/icons/web-design-and-development-6-4/128/279-256.png"
+                        alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@mdo">Personal Info</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#signup" data-bs-whatever="@mdo"
+                            href="#">Log out</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"> <a href="#"><img class="logo" src="images/logo.png" alt="#"></a></li>
+
+            <li class="nav-item" style="font-size:40px; margin-top: 10px;">
+                <h1 class="h1">Green <br> Planthom</h1>
+            </li>
+            <li class="nav-item" id="secnav">
+                <div class="input-group">
+                    <input id="input" type="text" class="form-control" placeholder="Search Plants">
+                    <button class="btn btn-success" type="button">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-squares-01/3/75-128.png"
+                            alt="search" style="width: 40px; height: 36px;">
+                    </button>
+                    <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#cart"
+                        style="float: left;">
+                        <img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/shopping-circle-green-256.png"
+                            alt="cart" style="width: 40px; height: 36px;"><span class="total-count"
+                            style="margin-left: 5px;"></span>
+                    </button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="bodyContent " style="padding: 70px;margin-top: 20px;">
+        <div class="row">
+            <div class="col-3 " style="position: fixed;margin-top: 160px;">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action  active" id="list-home-list" data-bs-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Orchids</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="profile">Daisies</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="messages">Succulents</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="settings">Roses</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <h1 style="color: purple;">ORCHIDS</h1>
+                        <hr style="color: purple;">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/cattleya.jfif" alt="Cattleya" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Cattleya</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Cattleya" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/cymbidium.jpg" alt="Cymbidium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Cymbidium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Cymbidium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/vanda.jfif" alt="Vanda" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Vanda</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/encyclia.jpg" alt="Encyclia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Encyclia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Encyclia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/miltonia.jfif" alt="Miltonia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Miltonia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Miltonia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/oncidium.jfif" alt="Oncidium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Oncidium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Oncidium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/epidendrum.jfif" alt="Epidendrum" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Epidendrum</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Epidendrum" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/odontoglossom.jpg" alt="Odontoglossum" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Odontoglossum</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Odontoglossum" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/dendrobium.jfif" alt="Dendrobium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Dendrobium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Dendrobium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/ludisia.jpg" alt="Ludisia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Ludisia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Ludisia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/cattleya.jfif" alt="Cattleya" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Cattleya</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Cattleya" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/cymbidium.jpg" alt="Cymbidium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Cymbidium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Cymbidium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/vanda.jfif" alt="Vanda" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Vanda</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/encyclia.jpg" alt="Encyclia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Encyclia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Encyclia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/miltonia.jfif" alt="Miltonia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Miltonia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Miltonia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/oncidium.jfif" alt="Oncidium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Oncidium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Oncidium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/epidendrum.jfif" alt="Epidendrum" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Epidendrum</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Epidendrum" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/odontoglossom.jpg" alt="Odontoglossum" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Odontoglossum</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Odontoglossum" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/dendrobium.jfif" alt="Dendrobium" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Dendrobium</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Dendrobium" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/orchids/ludisia.jpg" alt="Ludisia" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Ludisia</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Ludisia" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <h1 style="color:darkorchid;">Daisies</h1>
+                        <hr style="color:darkorchid;">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/lincoln.jfif" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Mr. Lincoln Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images//roses/dogrose.jpg " alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Dog Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <h1 style="color:green;">SUCCULENTS</h1>
+                        <hr style="color:green;">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/lincoln.jfif" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Mr. Lincoln Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images//roses/dogrose.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Dog Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images//roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Denim Jeans" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Vanda" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <h1 style="color: red;">ROSES</h1>
+                        <hr style="color: red;">
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/damask.jpg" alt="Damask Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Damask rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Damask rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/lincoln.jfif" alt="Lincoln Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Mr. Lincoln Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Mr. Lincoln Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/dogrose.jpg" alt="Dog Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Dog Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Dog Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/edenrose.jfif" alt="Eden Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Eden Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Eden Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/whiteRoseofYork.jfif" alt="White rose of York"
+                                        class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>White Rose of York</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="White Rose of York" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/BeachRose.jfif" alt="Beach Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Beach Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Beach Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/peaceRose.jpg" alt="Peace Rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Peace Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Peace Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/MultiFlowerRose.jpg" alt="multiflower rose" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>MultiFlower Rose</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="MultiFlower Rose" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/rosaKorbin.jpg" alt="rosa Korbin" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Rosa Korbin</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Rosa Korbin" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <img src="./images/roses/SweetBrier.jpg" alt="Sweet Brier" class="image">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                                        href="">
+                                        <h2>Sweet Brier</h2>
+                                    </a>
+                                    <p class="price">$19.99</p>
+                                    <a href="#" data-name="Sweet Brier" data-price="19.99"
+                                        class="add-to-cart btn btn-outline-success">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL CART -->
+    <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger" style="float: left;">Clear Cart</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    PERSONAL INFO MODAL
+-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Personal Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row" style="margin-left:50px">
+                            <div class="col-sm-4">
+                                <img src="./images/profile_icon.jfif" class="rounded float-start" alt="profie">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="lead">Username</p>
+                                <div class="input-group " style="margin-bottom:15px;">
+
+                                    <input type="text" class="edit-inputUser form-control w-50" value="Passerelles" disabled>
+                                    <button class="btn-editUser btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Password</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="password" class="edit-inputPass form-control w-50" value="Numeriques" disabled>
+                                    <button class="btn-editPass btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Retype Password</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="password" class="edit-inputRePass form-control w-50" value="" disabled>
+                                </div>
+                                <p class="lead">Email Address</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="text" class="edit-inputAdd form-control w-50" value="unknown@student.passerellesnumeriques.org" disabled>
+                                    <button class="btn-editAdd btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Contact Number</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="text" class="edit-inputCon form-control w-50" value="558-5655-4478" disabled>
+                                    <button class="btn-editCon btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

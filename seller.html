@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./css/seller.css" />
+    <title>Welcome Seller</title>
+</head>
+
+<body>
+    <div id="navigationBar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#"><img class="logo" src="images/logo.png" alt="#" /></a>
+            </li>
+            <li class="nav-item">
+                <h1 class="h1">
+                    Green <br /> Planthom
+                </h1>
+            </li>
+        </ul>
+        <div class="dropdown" style="float: right">
+            <img class="dropbtn" src="https://cdn4.iconfinder.com/data/icons/web-design-and-development-6-4/128/279-256.png" alt="" />
+
+            <div class="dropdown-content">
+                <a href="#">Personal Profile</a>
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+
+    <!-- -------------------TAB INFOS ----------------------->
+    <div class="tabInfos">
+        <div class="tabset">
+            <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked />
+            <label for="tab1">My Products</label>
+            <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier" />
+            <label for="tab2">Orders</label>
+            <input type="radio" name="tabset" id="tab3" aria-controls="dunkles" />
+            <label for="tab3">Dunkles Bock</label>
+
+            <div class="tab-panels">
+                <!-- ----------------------------TAB 1 FOR TAB INFOS (MANIPULATE THE PRODUCTS)------------------------------------- -->
+                <section id="marzen" class="tab-panel">
+                    <p class="ppup">
+                        <a class="keyword" id="k1" href="./relatedhtmlfiles/addProduct.html" style="border-radius: 50%">
+                            <img class="addIcon" src="https://cdn1.iconfinder.com/data/icons/jetflat-multimedia-vol-4/90/0042_086_plus_add_increase-256.png" alt="add" /></a><span>Add Product</span>
+                    </p>
+                    <!-- ---------------PRODUCT TABS----------------------->
+                    <br />
+                    <br />
+                    <div class="body">
+                        <div class="container">
+                            <input id="tab-1" type="radio" name="tabs" checked />
+                            <label for="tab-1">Orchids</label>
+
+                            <input id="tab-2" type="radio" name="tabs" />
+                            <label for="tab-2">Daisies</label>
+
+                            <input id="tab-3" type="radio" name="tabs" />
+                            <label for="tab-3">Succulents</label>
+
+                            <input id="tab-4" type="radio" name="tabs" />
+                            <label for="tab-4">Roses</label>
+
+                            <input id="tab-5" type="radio" name="tabs" />
+                            <label for="tab-5">Others</label>
+
+                            <div class="content">
+                                <!-- --------------------TAB 1 CONTENT --------------------------- -->
+                                <div id="content-1">
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/cattleya.jfif" alt="Cattleya" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Cattleya</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/cymbidium.jpg" alt="Cymbidium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Cymbidium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/vanda.jfif" alt="Vanda" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Vanda</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/encyclia.jpg" alt="Encyclia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Encyclia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/miltonia.jfif" alt="Miltonia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Miltonia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/oncidium.jfif" alt="Oncidium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Oncidium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/epidendrum.jfif" alt="Epidendrum" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Epidendrum</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/odontoglossom.jpg" alt="Odontoglossum" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Odontoglossum</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/dendrobium.jfif" alt="Dendrobium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Dendrobium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/ludisia.jpg" alt="Ludisia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Ludisia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/cattleya.jfif" alt="Cattleya" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Cattleya</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/cymbidium.jpg" alt="Cymbidium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Cymbidium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/vanda.jfif" alt="Vanda" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Vanda</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/encyclia.jpg" alt="Encyclia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Encyclia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/miltonia.jfif" alt="Miltonia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Miltonia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/oncidium.jfif" alt="Oncidium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Oncidium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/epidendrum.jfif" alt="Epidendrum" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Epidendrum</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/odontoglossom.jpg" alt="Odontoglossum" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Odontoglossum</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/dendrobium.jfif" alt="Dendrobium" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Dendrobium</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/orchids/ludisia.jpg" alt="Ludisia" class="image" />
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="">
+                                                    <h2>Ludisia</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- --------------------TAB 2 CONTENT --------------------------- -->
+                                <div id="content-2">
+                                    <h2>Tab-2</h2>
+                                    <p>This is tab2</p>
+                                </div>
+                                <!-- --------------------TAB 3 CONTENT --------------------------- -->
+                                <div id="content-3">
+                                    <h2>Tab-3</h2>
+                                    <p>This is tab3</p>
+                                </div>
+                                <!-- --------------------TAB 4 CONTENT --------------------------- -->
+                                <div id="content-4">
+                                    <h2>Tab-4</h2>
+                                    <p>This is tab4</p>
+                                </div>
+                                <!-- --------------------TAB 5 CONTENT --------------------------- -->
+                                <div id="content-5">
+                                    <h2>Tab-5</h2>
+                                    <p>This is for others</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ----------------------------TAB 2 FOR TAB INFOS (MANIPULATE THE ORDERS)------------------------------------- -->
+                <section id="rauchbier" class="tab-panel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="totalOrder">
+                                    <center>
+                                        <h1>Total Orders</h1>
+                                        <h1><img src="https://cdn4.iconfinder.com/data/icons/green-shopper/200/chart2.png" alt="total icon" style="width: 60px;">
+                                            <span>3</span>
+                                        </h1>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="pending">
+                                    <center>
+                                        <h1>Pending Orders</h1>
+                                        <h1><img src="https://cdn2.iconfinder.com/data/icons/shipping-logistics-5/160/shipping-order-pending-256.png" alt="pending icon" style="width: 60px;">
+                                            <span>1</span>
+                                        </h1>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="complete">
+                                    <center>
+                                        <h1>Complete Orders</h1>
+                                        <h1><img src="https://cdn0.iconfinder.com/data/icons/shopping-icons-part-1/512/shopping-12-256.png" alt="complete icon" style="width: 60px;">
+                                            <span>2</span>
+                                        </h1>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br /><br />
+                        <h3>Orders</h3>
+                        <table class=" table table-hover ">
+                            <thead class="table-success ">
+                                <tr>
+                                    <th scope="col ">Transaction #</th>
+                                    <th scope="col ">First Name</th>
+                                    <th scope="col ">Last Name</th>
+                                    <th scope="col ">Email</th>
+                                    <th scope="col ">Contact Number</th>
+                                    <th scope="col ">Status</th>
+                                    <th scope="col ">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mary Mae</td>
+                                    <td>Pastidio</td>
+                                    <td>marymaepastidio@gmail.com</td>
+                                    <td>09507160270</td>
+                                    <td>
+                                        <button class="btn-success " id="status" style="width: 90px;">Complete</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn " id="details" data-toggle="tooltip" data-placement="left" title="details"><img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/09-256.png " alt="details " style="width: 30px; margin-top: -15px; margin-left: -10px;">
+                                            
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Kaith Chymbee</td>
+                                    <td>Cerenio</td>
+                                    <td>cereniokcbarbie@gmail.com</td>
+                                    <td>09187613517</td>
+                                    <td>
+                                        <button class="btn-danger " id="status" style="width: 90px;">Pending</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn " id="details" data-toggle="tooltip" data-placement="left" title="details"><img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/09-256.png " alt="details " style="width: 30px;margin-top: -15px; margin-left: -10px;"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Melchor</td>
+                                    <td>Casipong</td>
+                                    <td>melcor_casipong20@gmail.com</td>
+                                    <td>09109485013</td>
+                                    <td>
+                                        <button class="btn-success " id="status" style="width: 90px;">Complete</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn " id="details" data-toggle="tooltip" data-placement="left" title="details"><img src="https://cdn1.iconfinder.com/data/icons/color-bold-style/21/09-256.png " alt="details " style="width: 30px;margin-top: -15px; margin-left: -10px;"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+                <section id="dunkles " class="tab-panel ">
+                    <h3>6C. Dunkles Bock</h3>
+                    <p>
+                        <strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.
+                    </p>
+                    <p>
+                        <strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century.
+                        The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.
+                    </p>
+                </section>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js "></script>
+        <script>
+            $(function() {
+                $('[data-toggle="tooltip "]').tooltip()
+            })
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+</body>
+
+</html>
