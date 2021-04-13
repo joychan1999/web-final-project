@@ -2,6 +2,11 @@
     box-sizing: border-box;
     padding: 10px;
   }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
  
   .addcontent{
     padding: 10px;
