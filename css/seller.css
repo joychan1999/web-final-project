@@ -410,8 +410,13 @@ h2 {
       margin-top: 13px;
   }
   p{
-    text-align:justify;
+    text-align: center;
   }
+
+  .productContent{
+      text-align: justify;
+  }
+
   .logo{
     width: 80px;
     margin-left: 40px;

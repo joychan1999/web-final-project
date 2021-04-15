@@ -34,12 +34,68 @@
                 src="https://cdn4.iconfinder.com/data/icons/web-design-and-development-6-4/128/279-256.png" alt="" />
 
             <div class="dropdown-content">
-                <a href="#">Personal Profile</a>
+                <a data-bs-toggle="modal" data-bs-target="#personalInfo" data-bs-whatever="@mdo">Personal Profile</a>
                 <a href="index.html">Log Out</a>
             </div>
         </div>
     </div>
     <br /><br />
+
+    <!----------------------PERSONAL PROFILE---------------------------->
+    <div class="modal fade" id="personalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Personal Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row" style="margin-left:50px">
+                            <div class="col-sm-4" >
+                                <img src="./images/joy.jpeg" class="rounded float-start" alt="profie" style="width: 100%;">
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="lead">Username</p>
+                                <div class="input-group " style="margin-bottom:15px;">
+
+                                    <input type="text" class="edit-inputUser form-control w-50" value="Passerelles"
+                                        disabled>
+                                    <button class="btn-editUser btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Password</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="password" class="edit-inputPass form-control w-50" value="Numeriques"
+                                        disabled>
+                                    <button class="btn-editPass btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Retype Password</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="password" class="edit-inputRePass form-control w-50" value="" disabled>
+                                </div>
+                                <p class="lead">Email Address</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="text" class="edit-inputAdd form-control w-50"
+                                        value="unknown@student.passerellesnumeriques.org" disabled>
+                                    <button class="btn-editAdd btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                                <p class="lead">Contact Number</p>
+                                <div class="input-group" style="margin-bottom:15px;">
+                                    <input type="text" class="edit-inputCon form-control w-50" value="558-5655-4478"
+                                        disabled>
+                                    <button class="btn-editCon btn btn-outline-primary" type="button">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- -------------------TAB INFOS ----------------------->
     <div class="tabInfos">
@@ -193,134 +249,515 @@
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <!-- --------------------TAB 2 CONTENT --------------------------- -->
+                                <div id="content-2">
+                                    <div class="row">
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/cattleya.jfif" alt="Cattleya"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/english-daisy.jpg" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Cattleya</h2>
+                                                    <h2>English Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/cymbidium.jpg" alt="Cymbidium"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/african.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Cymbidium</h2>
+                                                    <h2>African Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/vanda.jfif" alt="Vanda" class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/gloriosa.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Vanda</h2>
+                                                    <h2>Gloriosa Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/encyclia.jpg" alt="Encyclia" class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/blue-marguerite.jpg" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Encyclia</h2>
+                                                    <h2>Blue Marguerite</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/miltonia.jfif" alt="Miltonia"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/shasta.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Miltonia</h2>
+                                                    <h2>Shasta Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/oncidium.jfif" alt="Oncidium"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/cape.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Oncidium</h2>
+                                                    <h2>Cape Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/epidendrum.jfif" alt="Epidendrum"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/indian-chrysanthemum.jpg" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Epidendrum</h2>
+                                                    <h2>Indian Chrysanthemum</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/odontoglossom.jpg" alt="Odontoglossum"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/gerbera.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Odontoglossum</h2>
+                                                    <h2>Gerbera Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/dendrobium.jfif" alt="Dendrobium"
-                                                    class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/marguerite.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Dendrobium</h2>
+                                                    <h2>Marguerite Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="card">
-                                                <img src="./images/orchids/ludisia.jpg" alt="Ludisia" class="image" />
-                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                <img src="./images/daisy/aster.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#cattleya"
                                                     data-bs-whatever="@mdo" href="">
-                                                    <h2>Ludisia</h2>
+                                                    <h2>Aster Daisy</h2>
                                                 </a>
                                                 <p class="price">$19.99</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- --------------------TAB 2 CONTENT --------------------------- -->
-                                <div id="content-2">
-                                    <h2>Tab-2</h2>
-                                    <p>This is tab2</p>
-                                </div>
                                 <!-- --------------------TAB 3 CONTENT --------------------------- -->
                                 <div id="content-3">
-                                    <h2>Tab-3</h2>
-                                    <p>This is tab3</p>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/jade.jfif" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Jade</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/zebra.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Zebra Plant</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/panda.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Panda Plant</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/hens.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Hens and Chicks</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/black.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Black Prince</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/burros.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Burro's Tail</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/white.jpg" alt="Denim Jeans" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>White Velvet</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/pincushion-cactus.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Pincushion Cactus</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/christmas.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Christmas Cactus</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/woolly.webp" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Woolly Senecio</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/snake.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Snake Plants</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/succulents/sweetheart.jfif" alt="Denim Jeans"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Sweetheart Hoya</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- --------------------TAB 4 CONTENT --------------------------- -->
                                 <div id="content-4">
-                                    <h2>Tab-4</h2>
-                                    <p>This is tab4</p>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/damask.jpg" alt="Damask Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Damask Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/lincoln.jfif" alt="Lincoln Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Mr. Lincoln Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/dogrose.jpg" alt="Dog Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Dog Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/edenrose.jfif" alt="Eden Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Eden Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/whiteRoseofYork.jfif" alt="White rose of York"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>White Rose of York</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/BeachRose.jfif" alt="Beach Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Beach Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/peaceRose.jpg" alt="Peace Rose" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Peace Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/MultiFlowerRose.jpg" alt="multiflower rose"
+                                                    class="image" data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>MultiFlower Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/rosaKorbin.jpg" alt="rosa Korbin" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Rosa Korbin</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/SweetBrier.jpg" alt="Sweet Brier" class="image"
+                                                    data-bs-toggle="modal" data-bs-target="#cattleya"
+                                                    data-bs-whatever="@mdo">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Sweet Brier</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- --------------------TAB 5 CONTENT --------------------------- -->
                                 <div id="content-5">
-                                    <h2>Tab-5</h2>
-                                    <p>This is for others</p>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/damask.jpg" alt="Damask Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>tae</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/lincoln.jfif" alt="Lincoln Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Mr. Lincoln Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/dogrose.jpg" alt="Dog Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Dog Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/edenrose.jfif" alt="Eden Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Eden Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/whiteRoseofYork.jfif" alt="White rose of York"
+                                                    class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>White Rose of York</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/BeachRose.jfif" alt="Beach Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Beach Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/peaceRose.jpg" alt="Peace Rose" class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Peace Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/MultiFlowerRose.jpg" alt="multiflower rose"
+                                                    class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>MultiFlower Rose</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/rosaKorbin.jpg" alt="rosa Korbin"
+                                                    class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Rosa Korbin</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="card">
+                                                <img src="./images/roses/SweetBrier.jpg" alt="Sweet Brier"
+                                                    class="image">
+                                                <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="@mdo" href="">
+                                                    <h2>Sweet Brier</h2>
+                                                </a>
+                                                <p class="price">$19.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -508,33 +945,13 @@
                                         <img src="./images/sampleimageforcont/p3.jfif" class="smallpic"
                                             onclick="currentSlide(5)" />
                                     </div>
-                                    <div class="mt-5">
-                                        <div class="row justify-content-md" style="margin-left:30px;">
-                                            <div class="d-flex flex-row">
-                                                <div class="p-1">
-                                                    <img src="./images/logo.png" class="logo" alt="Shop Logo" />
-                                                </div>
-                                                <div class="p-2 mt-1">
-                                                    <h5>OneStopShop</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="margin-left:85px;margin-block-end:10%;">
-                                            <button class="btn button text-center">
-                                                <ion-icon name="logo-wechat"></ion-icon> Chat Now
-                                            </button>
-                                            <button class="btn button text-center">
-                                                <ion-icon name="storefront-outline"></ion-icon> View Shop
-                                            </button>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="col-6  mt-4">
                                     <h3 class="text-center" style="font-weight: 300;"><b> Red African Rose</b></h3>
                                     <h6 class="mt-5">Plant Description</h6>
                                     <div style="margin-right: 5%;">
                                         <div class="mt-3 text-center">
-                                            <p>
+                                            <p class="productContent">
                                                 A rose is a woody perennial flowering plant of the genus Rosa,
                                                 in the family Rosaceae, or the flower it bears. There are over
                                                 three hundred species and tens of thousands of cultivars. They
@@ -552,10 +969,11 @@
                                         <div class="row">
                                             <div class="input-group" style="margin-right: 2%;margin-left: 3%;">
                                                 <div class="col-auto">
-                                                    <a href="./relatedhtmlfiles/updateproduct.html"> <button type="button" class="btn btn-success btn-md">
-                                                        Update Details
-                                                    </button></a>
-                                                    
+                                                    <a href="./relatedhtmlfiles/updateproduct.html"> <button
+                                                            type="button" class="btn btn-success btn-md">
+                                                            Update Details
+                                                        </button></a>
+
                                                     <button type="button" class="btn btn-danger btn-md">
                                                         Delete Product
                                                     </button>
@@ -586,8 +1004,10 @@
         </div>
     </div>
     </div>
+
+
     <script>
-        // ---------------PRODUCT INFORMATIONS----------------------
+        // ---------------PRODUCT INFORMATIONS SLIDE PICTURES----------------------
         var slideIndex = 1;
         showSlides(slideIndex);
 
